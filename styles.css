@@ -1,0 +1,457 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+p{ font-size: 1.25em;}
+
+h1{ font-size: 4em;}
+
+
+button{
+    font-size: 1.50em;
+    font-weight: lighter;
+    padding: 5px 15px;
+    border-radius: 50px;
+    border: 3px solid rgba(0,0,0,0.3);
+    color: black;
+    background-color: rgb(220, 231, 231);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+header{
+    background-color: black;
+    
+}
+
+header .logo{
+    margin-right: 1050px;
+    padding: 5px 2px;
+    font-weight: bold;
+    color: rgba(19, 224, 0, 0.603);
+    font-size: .9em;
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+header a{
+    padding: 100spx 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.986);
+    margin-left: 1000px;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(91, 238, 46, 0.603),
+        rgba(0,0,0,0.5)
+    )
+    ,url("https://www.milenio.com/uploads/media/2020/08/19/axol-fue-creado-por-narciso_0_320_1200_746.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: rgb(0, 0, 0);
+}
+#hero button{
+    font-size: 1.75em;
+}
+
+#img-hero {
+    background-color: rgba(68, 245, 236, 0.603);
+}
+
+.planos-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.planos-conteudo {
+    display: flex;
+    flex: 1;
+}
+
+.planos-item {
+    background: rgb(54, 129, 32);
+    padding: 10px;
+    width: 280px;
+    border-radius: 10px;
+    margin: 0 10px 0 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.plano-tipo {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #1d1d1d;
+    min-height: 200px;
+}
+
+.plano-tipo p {
+    font-weight: 500;
+    font-size: 14px;
+    color: #141414;
+}
+
+
+.plano-tipo p:nth-child(1) {
+    font-size: 13px;
+    display: inline-block;
+    padding: 4px 10px;
+    font-weight: 600;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    background: #e6d70d;
+}
+
+.plano-tipo p:nth-child(2) {
+    font-size: 13px;
+    display: inline-block;
+    padding: 4px 10px;
+    font-weight: 600;
+    border: 1px solid #dfd008;
+    border-radius: 5px;
+    color: #000000;
+    margin-top: 10px;
+}
+
+.plano-vantagens {
+    margin-top: 30px;
+    min-height: 5px;
+}
+
+.plano-vantagem-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.plano-vantagem-item i {
+    margin-right: 10px;
+    color: #1d1d1d;
+}
+
+.plano-vantagem-item p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #1d1d1d;
+}
+
+.plano-btn {
+    height: 80px;
+}
+
+.plano-btn a{
+    display: block;
+    margin: 0 auto;
+    color: rgb(221, 215, 215);
+    padding: 10px 0;
+    width: 180px;
+    background: #1d1d1d;
+    text-align: center;
+    border-radius: 200px;
+    margin-bottom: 20px;
+    transition: ease 0.1s all;
+    text-transform: uppercase;
+}
+
+.plano-btn a:hover {
+    width: 200px;
+    padding-top: 15px;
+    padding-bottom: 12px;
+}
+
+.plano-info {
+    min-height: 140px;
+    font-size: 12px;
+    color: #1d1d1d;
+}
+
+.plano-info a {
+    text-decoration: underline;
+    color: #1d1d1d;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+    .planos-conteudo {
+        flex-direction: column;
+    }
+
+    .planos-item {
+        background: rgb(219, 12, 12);
+        padding: 20px;
+        width: auto;
+        max-width: 600px;
+        align-self: center;
+        margin: 0 0 30px 0;
+    }
+
+    .plano-tipo {
+        min-height: auto;
+    }
+
+    .plano-vantagens {
+        min-height: auto;
+    }
+
+    .plano-info {
+        min-height: auto;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .planos-titulo {
+        margin: 0 20px 30px 20px;
+    }
+
+    .planos-conteudo {
+        flex-direction: column;
+    }
+
+    .planos-item {
+        background: rgb(107, 11, 11);
+        padding: 20px;
+        width: auto;
+        max-width: 600px;
+        align-self: center;
+        margin: 0 20px 30px 20px;
+    }
+
+    .plano-tipo {
+        min-height: auto;
+    }
+
+    .plano-vantagens {
+        min-height: auto;
+    }
+
+    .plano-info {
+        min-height: auto;
+    }
+}
+
+.galeria {
+    font-size: 1.25em;
+
+}
+.opciones{ font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(22, 175, 86, 0.603),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+
+
+.row{
+display: flex;
+padding: 5px;
+flex-wrap: wrap;
+
+
+}
+
+.colums{
+    flex: 25%;
+    padding: 5px;
+}
+
+.column img{
+    margin-top: 5px;
+}
+
+@media (max-width: 800px){
+    .column{
+        flex: 50%;
+    }
+}
+
+@media (max-width: 600px){
+    .column{
+        flex: 100%;
+    }
+}
+footer {
+    background-color: #000;
+    width: auto;
+    height: 25em;
+    display: grid;
+    padding-left: 270px;
+    padding-top: 75px;
+    grid-template-columns: repeat(4, 190px);
+  }
+  .footer-links {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    margin-top: 20px;
+  }
+  .footer-links ul li h5 {
+    color: #a9a9a9;
+    font-size: 12px;
+    font-family: lineto-pro-medium;
+    letter-spacing: 0.5px;
+    margin-bottom: 25px;
+  }
+  .footer-links ul li a {
+    display: flex;
+    color: #fff;
+    margin-bottom: 20px;
+    font-family: lineto-pro-book;
+  }
+  .last-section-div {
+    width: auto;
+    margin-top: 25px;
+  }
+  .last-section-div ul {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    margin-left: -190px;
+  }
+  .last-section-div ul li {
+    margin-right: 23px;
+  }
+  .last-section-div ul li a {
+    color: #a9a9a9;
+    font-size: 12px;
+    font-family: lineto-pro-book;
+  }
+  .social-media-icons {
+    width: 220px;
+    height: 60px;
+    margin-left: 298%;
+    margin-top: 20px;
+  }
+ 
+  .usa-text {
+    color: #a9a9a9;
+    margin-top: 4px;
+    margin-left: 348%;
+    font-size: 12px;
+    font-family: lineto-pro-medium;
+  }
+  .sneakers-copy {
+    color: #0e0c0c;
+    font-size: 20px;
+    font-family: lineto-pro-book;
+    margin-left: 400px;
+  }
+   .fa-instagram {
+    background: #242424;
+    color: rgb(10, 7, 7);
+    font-size: 28px;
+    width: 54px;
+    padding: 13px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  .fa-twitter {
+    background: #242424;
+    color: white;
+    font-size: 28px;
+    width: 54px;
+    padding: 13px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  .fa-facebook {
+    background: #242424;
+    color: white;
+    font-size: 28px;
+    width: 54px;
+    padding: 13px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  .btn-azul {
+    position: center;
+    border: none;
+    background-color: rgba(68, 245, 236, 0.603);
+    width: 215px;
+    height: 500px;
+    padding: 16px;
+    top: 18px;
+    right: 114px;
+    border-radius: 25px;
+  }
+  .fa-instagram:hover,
+  .fa-facebook:hover,
+  .fa-twitter:hover,
+  .footer-links ul li a:hover,
+  .usa-text:hover {
+    color: rgba(0, 165, 0, 0.603);
+  }
+  .btn-white:hover {
+    transform: scale(1.06);
+  }
+  .btn-green:hover,
+  .btn-green-card2:hover {
+    background-color: #21ce61;
+    transform: scale(1.06);
+  }
+
+  .nav-btn {
+    position: fixed;
+    top: 14px;
+    right: 60px;
+    z-index: 4;
+    display: none;
+  }
+  .fa-bars {
+    color: white;
+  }
+  .fa-close {
+    display: none;
+    color: white;
+  }
+ 
+  @media (max-width: 1445px) {
+    footer {
+      padding-left: 140px;
+    }
+    .main-nav ul.nav-options {
+      margin-left: 500px;
+    }
+  }

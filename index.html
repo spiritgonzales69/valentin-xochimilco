@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Visita Xochimilco</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+
+<body>
+    
+    <header>
+        <div class="container">
+            <img src="data:image/png;base64,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">
+            <nav>
+                <a href="#Valentin">CONOCE XOCHIMILCO</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <h1>CONOCE XOCHIMILCO Y SUS LAGOS <br>VEN Y PASA UN DIA AGRADABLE</h1>
+    </section>
+
+    <section id="catalogo">
+        <div class="container">
+            <div class="planos-container">
+        
+                <article class="planos-conteudo">
+    
+                    
+                    <div class="planos-item">
+    
+                        <div class="plano-tipo">
+                            <p>Museo Del Ajolote</p>
+                            <p>Pago único disponible</p>
+
+                            <p>Nota importante: El costo de entrada al Museo del Ajolote no está incluido. Costo de acceso $50 mxn</p>
+
+                                <p>Duración 4 horas</p>
+                                
+                               <p> Capacidad máxima de 18 personas a causa del Covid-19. El precio es por trajinera, no por persona. Es decir, el precio es el mismo si va 1 o las 18 personas.
+                                
+                                Debemos mencionar que hay serpentarios en la zona turística donde tienen en exhibición a alrededor de 10 ajolotes, pero la prioridad son las serpientes. Sin embargo, el ajolotorio que proponemos en este tour, es un criadero de ajolotes donde hay en exhibición más de 70 ajolotes, la prioridad son estos animalitos.
+                                
+                                Recorrerán por el canal principal de Xochimilco y pasarán por donde hay música en vivo.
+                                
+                                Bajarán a los “Jardines flotantes” (chinampas) para poder ver plantas.
+                                
+                                Visitarán la laguna de Caltongo.
+                                
+                                Pasarán la plataforma que traslada las trajineras de la zona turística a la zona ecológica.
+                                
+                                Visitarán el Museo del Ajolote donde un biólogo-marino les dará una explicación amplia de la especie del ajolote endémica de Xochimilco.
+                                
+                                Visitarán una pequeña parte del canal de Apatlaco.
+                                
+                                Es necesario abordar antes de las 3pm para poder pasar de lado de la zona ecológica. Sin embargo es posible realizar el tour después de este horario con un costo extra de 300 pesos, pero implicaría un cambio de trajinera.</p>
+                            <p>Todos los números y tallas.</p>
+                        </div>
+
+                        <div class="plano-vantagens">
+                        </div>
+                        <img src="https://www.trajinerasxochimilco.com.mx/wp-content/uploads/2017/04/Tour-Ecologico-Trajineras-Xochimilco.jpg" height="250px" width="250px"  alt="ajolotes">
+                        <div class="plano-btn">
+                            <a href="#">Reservar</a>
+                        </div>
+
+                        <p class="plano-info"><a href="#">Se aplican términos y condiciones.</a></p>
+                    </div>
+    
+                    <div class="planos-item">
+    
+                        <div class="plano-tipo">
+                            <p>Paseo En Trajinera</p>
+                            <p>Pago único disponible</p>
+                            <p>Duración de 3 horas</p>
+<p>Capacidad máxima de 18 personas a causa del Covid-19. El precio es por trajinera, no por persona. Es decir, el precio es el mismo si va 1 o las 18 personas.
+                                
+                                Recorrerán toda la zona turística.
+                                
+                                Recorrerán por el canal principal de Xochimilco y pasarán por donde hay música en vivo.
+                                
+                                Bajarán a los “Jardines flotantes” (chinampas) para poder ver plantas.
+                                
+                                Visitarán la laguna de Caltongo.
+                                
+                                Visitarán la laguna de Xaltocán
+                                
+                                Podrán ver el restaurante María Candelaria donde se filmó esta película de la época dorada del cine mexicano.
+                                
+                                Finalmente, llegarán al serpentario donde les darán una explicación amplia sobre serpientes endémicas y no endémicas de la región. Podrán ver ajolotes, aunque la prioridad son las serpientes.
+                                
+                                El costo de entrada al Serpentario no está incluido. Costo de acceso $50 mxn</p>
+                        </div>
+
+                        <div class="plano-vantagens">
+                        </div>
+                        <img src="https://www.trajinerasxochimilco.com.mx/wp-content/uploads/2020/10/@karibbeanpassiontravel.jpg" height="250px" width="250px" alt="reebok">
+
+                        <div class="plano-btn">
+                            <a href="#">Reservar</a>
+                        </div>
+    
+                        <p class="plano-info"><a href="#">Se aplican términos y condiciones.</a></p>
+                    </div>
+    
+                    <div class="planos-item">
+    
+                        <div class="plano-tipo">
+                            <p>Isla De Las Mueñecas</p>
+                            <p>Pago único disponible</p>
+                            <p>Duración de 5 horas</p>
+
+                            <p>Notas importantes: El costo de entrada al Museo del Ajolote no está incluido. Costo de acceso $50 mxn
+                                
+                                El costo de entrada a la Isla de las Muñecas no está incluido. Costo de acceso $50 mxn
+                                
+                                Capacidad máxima de 18 personas a causa del Covid-19. El precio es por trajinera, no por persona. Es decir, el precio es el mismo si va 1 o las 18 personas.
+                                
+                                En los últimos años, muchas personas dueñas de chinampas, han creado réplicas de la Isla de las Muñecas. Algunos prestadores venden estas réplicas como la verdadera isla de las muñecas, cuando no es así.
+                                
+                                Recorrerán por el canal principal de Xochimilco y pasarán por donde hay música en vivo.
+                                
+                                Bajarán a los “Jardines flotantes” (chinampas) para poder ver plantas.
+                                
+                                Visitarán la laguna de Caltongo.
+                                
+                                Pasarán la plataforma que traslada las trajineras de la zona turística a la zona ecológica.
+                                
+                                Visitarán el Museo del Ajolote donde un biólogo-marino les dará una explicación amplia de la especie del ajolote endémica de Xochimilco.
+                                
+                                Visitarán una pequeña parte del canal de Apatlaco.
+                                
+                                Después podrán disfrutar de los canales más hermosos y tranquilos que se encuentran en la zona ecológica.
+                                Podrán ver la Chinampa más pequeña de Xochimilco.
+                                 Finalmente, visitarán la original Isla de las Muñecas donde un guía les contará la terrorífica historia de esta chinampa.
+                                
+                                
+                            </p>
+                        </div>
+    
+                        <div class="plano-vantagens">
+    
+                        </div>
+                        <img src="https://uvp.mx/uvpblog/wp-content/uploads/2020/05/ISLA-1024x586.jpg" width="250px" height="200px" alt="nike1">
+    
+                        <div class="plano-btn">
+                            <a href="#">Reservar</a>
+                        </div>
+    
+                        <p class="plano-info"><a href="#">Se aplican términos y condiciones.</a></p>
+                    </div>
+    
+                    <div class="planos-item">
+    
+                        <div class="plano-tipo">
+                            <p>Fiesta Trajinera</p>
+                            <p>Pago único disponible</p>
+                            <p>Duración de 3 horas </p>
+                            <p> Capacidad máxima de 18 personas a causa del Covid-19. El precio es por trajinera, no por persona. Es decir, el precio es el mismo si va 1 o las 18 personas.
+                                
+                                Pasa una gran tarde con tus amigos y familia con nuestro tour fiesta. El tour incluye recorrido de 3 horas en trajinera hasta para 16 personas por motivos del Covid-19, personalización de la portada de la trajineras con pintura y bocina para escuchar música.
+                                
+                                Recorrerán toda la zona turística.
+                                
+                                Recorrerán por el canal principal de Xochimilco y pasarán por donde hay música en vivo.
+                                
+                                Bajarán a los “Jardines flotantes” (chinampas) para poder ver plantas.
+                                
+                                Visitarán la laguna de Caltongo.
+                                
+                                Visitarán la laguna de Xaltocán
+                                
+                                Podrán ver el restaurante María Candelaria donde se filmó esta película de la época dorada del cine mexicano.
+                                
+                                Irán al canal de Santa Cruz.
+                                
+                                La portada puede incluir el texto que desees. este tour debe contratarse con mínimo 4 horas de anticipación para asegurar la personalización de la portada. Al finalizar tu pedido encontraras un espacio para incluir las instrucciones de personalización, o bien, al confirmar tu pedido nos contactaremos contigo.
+                            </p>
+                            <p>Todos los números y tallas.</p>
+                        </div>
+
+                        <div class="plano-vantagens">
+                        </div>
+                         <img src="https://www.travelreport.mx/wp-content/uploads/2018/06/Xoximilco-una-fiesta-en-trajinera1-1.jpg" height="250px" width="250" alt="converse">
+    
+                        <div class="plano-btn">
+                            <a href="#">Reservar</a>
+                        </div>
+    
+                        <p class="plano-info"> <a href="#">Se aplican Términos y Condiciones</a></p>
+                    </div>
+    
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria"> 
+        <div class="opciones">
+            <h2>Xochimilco <br> Que en náhuatl significa “Campo de Flores”, se distingue por una serie de canales pluviales que existen desde la época prehispánica, cuando el Valle de México estaba conformado por lagos y lagunas casi en su totalidad.</h2>
+            
+
+           
+
+            <div class="row">
+          
+            
+
+            </div>
+
+    </section>
+
+    <footer class="footer">
+        <div class="img-container">
+        </div>
+        <div class="footer-links">
+          <ul>
+            <li><h5>COMPAÑÍA</h5></li>
+            <li><a href="#">Acerca de</a></li>
+            <li><a href="#">Empleos</a></li>
+          </ul>
+          <ul>
+            <li><h5>COMUNIDADES</h5></li>
+            <li><a href="#">Publicidad</a></li>
+            <li><a href="#">Aviso de privacidad</a></li>
+            <li><a href="#">Políticas de Cancelación y Modificación</a></li>
+          </ul>
+          <ul>
+            <li><h5>ENLACES ÚTILES</h5></li>
+            <li><a href="#">Ayuda</a></li>
+          </ul>
+          <div class="last-section-div">
+            <ul>
+              <li><a href="#">Legal</a></li>
+              <li><a href="#">Centro de privacidad</a></li>
+              <li><a href="#">Política de privacidad</a></li>
+              <li><a href="#">Cookies</a></li>
+              <p class="sneakers-copy">&copy XOCHIMILCO 2022🍀</p>
+            </ul>
+          </div>
+        </div>
+        <div class="social-media-icons">
+          <a href="#" class="fa fa-instagram"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-facebook"></a>
+        </div>
+      </footer>
+</body>
+</html>
+
+
+</body>
+</html>
